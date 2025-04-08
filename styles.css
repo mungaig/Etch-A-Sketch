@@ -7,8 +7,8 @@ body{
 }
 
 #container{
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     border: solid 1px #000;
-    margin: auto;
+    margin: 10px auto;
 }
