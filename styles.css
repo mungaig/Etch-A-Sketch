@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+#container{
+    width: 700px;
+    height: 700px;
+    border: solid 1px #000;
+    margin: auto;
+}
