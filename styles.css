@@ -11,4 +11,10 @@ body{
     height: 600px;
     border: solid 1px #000;
     margin: 10px auto;
+    display: flex;
+}
+
+.square{
+    flex: 1 1 auto;
+    border: 0.5px dotted #ccc;
 }
