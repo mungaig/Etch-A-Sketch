@@ -11,13 +11,17 @@ body{
     height: 600px;
     border: solid 1px #000;
     margin: 10px auto;
-}
-
-.square{
-    flex: 1;
-    border: 0.5px dotted #ccc;
-}
-
-#square-row{
     display: flex;
+    flex-direction: column;
 }
+
+.row{
+    display: flex;
+    flex: 1;
+}
+
+.cell{
+    flex: 1;
+    border: 0.2px dotted #ccc;
+}
+
