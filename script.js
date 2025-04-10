@@ -13,7 +13,11 @@ function createGrid(num){
         for(let j = 1; j <= num; j++){
             const cell = document.createElement('div');
             cell.classList.toggle('cell');
+            cell.setAttribute('id','square');
             row.appendChild(cell);
+            cell.addEventListener('mouseenter', () => {
+                cell.style.backgroundColor = genRandomColor();
+            })
         }
     }
 }
@@ -30,3 +34,13 @@ gridGenBtn.addEventListener('click', () => {
     userInput.value = '';
     userInput.focus();    
 });
+
+//Create 'hover' effect
+//generate a random color
+function genRandomColor(){
+    const r = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    return `rgb(${r},${b},${g})`;
+}
+
