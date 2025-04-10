@@ -1,7 +1,6 @@
 // DOM
 const container = document.querySelector('#container');
 const gridGenBtn = document.querySelector('#grid-btn');
-const userInput = document.querySelector('#user-input');
 
 // Logic
 function createGrid(num){
@@ -21,3 +20,13 @@ function createGrid(num){
 
 //Call function
 createGrid(16);
+
+//Generate the grid based on user input
+gridGenBtn.addEventListener('click', () => {
+    container.innerHTML = '';
+    const userInput = document.querySelector('#user-input');
+    const cellsNum = userInput.value;
+    createGrid(cellsNum);
+    userInput.value = '';
+    userInput.focus();    
+});
