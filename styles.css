@@ -27,6 +27,6 @@ input{
 
 .cell{
     flex: 1;
-    border: 0.2px dotted #DCD7C9;
+    border: 1px dotted #DCD7C9;
 }
 

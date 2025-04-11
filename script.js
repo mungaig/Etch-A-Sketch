@@ -29,11 +29,16 @@ createGrid(16);
 gridGenBtn.addEventListener('click', () => {
     container.innerHTML = '';
     const userInput = document.querySelector('#user-input');
-    const cellsNum = userInput.value;
-    createGrid(cellsNum);
-    userInput.value = '';
-    userInput.focus();    
-});
+    const cellsNum = parseInt(userInput.value);
+        if(isNaN(cellsNum)|| cellsNum > 100|| cellsNum < 1){
+            alert('Please enter a valid number');
+        }
+        else{
+            createGrid(cellsNum);
+            userInput.value = '';
+            userInput.focus();   
+        }
+    });
 
 //Create 'hover' effect
 //generate a random color
