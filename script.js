@@ -1,6 +1,7 @@
 // DOM
 const container = document.querySelector('#container');
 const gridGenBtn = document.querySelector('#grid-btn');
+// let opacity = 0.1;
 
 // Logic
 function createGrid(num){
@@ -15,9 +16,9 @@ function createGrid(num){
             cell.classList.toggle('cell');
             cell.setAttribute('id','square');
             row.appendChild(cell);
-            cell.addEventListener('mouseenter', () => {
-                cell.style.backgroundColor = genRandomColor();
-            })
+            cell.addEventListener('mouseenter', () => {            
+                    cell.style.backgroundColor = genRandomColor();
+            });
         }
     }
 }
